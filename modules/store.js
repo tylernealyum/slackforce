@@ -2,7 +2,7 @@
 
 let auth = require("./slack-salesforce-auth"),
     force = require("./force"),
-    ACCOUNT_TOKEN = process.env.SLACK_ACCOUNT_TOKEN;
+    ACCOUNT_TOKEN = process.env.SLACK_STORE_TOKEN;
 
 exports.execute = (req, res) => {
 
