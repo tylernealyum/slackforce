@@ -22,6 +22,11 @@
         "description": "Salesforce login URL",
         "value":"https://login.salesforce.com"
     },
+    "SLACK_STORE_TOKEN": {
+        "description": "Slack token for the store slash command",
+        "value":"",
+        "required":false
+    },
     "SLACK_ACCOUNT_TOKEN": {
         "description": "Slack token for the account slash command",
         "value":"",
