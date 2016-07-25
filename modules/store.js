@@ -2,11 +2,11 @@
 
 let auth = require("./slack-salesforce-auth"),
     force = require("./force"),
-    ACCOUNT_TOKEN = process.env.SLACK_STORE_TOKEN;
+    STORE_TOKEN = process.env.SLACK_STORE_TOKEN;
 
 exports.execute = (req, res) => {
 
-    if (req.body.token != ACCOUNT_TOKEN) {
+    if (req.body.token != STORE_TOKEN) {
         console.log("Invalid token");
         res.send("Invalid token");
         return;
