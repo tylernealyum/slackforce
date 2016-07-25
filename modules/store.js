@@ -29,7 +29,7 @@ exports.execute = (req, res) => {
                     fields.push({title: "Open in Salesforce:", value: oauthObj.instance_url + "/" + store.Id, short:false});
                     attachments.push({color: "#7F8DE1", fields: fields});
                 });
-                res.json({text: "Stores matching '" + req.body.text + "':", attachments: attachments});
+                res.json({"response_type": "in_channel",text: "Stores matching '" + req.body.text + "':", attachments: attachments});
             } else {
                 res.send("No records");
             }
