@@ -20,6 +20,7 @@ app.use('/', express.static(__dirname + '/www')); // serving company logos after
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/pipeline', opportunity.execute);
+app.post('/store', store.execute);
 app.post('/contact', contact.execute);
 app.post('/account', account.execute);
 app.post('/case', _case.execute);
